@@ -37,13 +37,13 @@ python dgh_extractor.py path/to/persistentgamedata.dat slot [-o OUTDIR]
 
 ### Example
 
-Slot 1, run from the `save-extractor` folder, writing to `./out`:
+Slot 1, with the save file in the same folder as the script, writing to `./out`:
 
 ```
-py dgh_extractor.py ..\persistentgamedata_real.dat 1 -o out
+py dgh_extractor.py ..\persistentgamedata1.dat 1 -o out
 ```
 
-Output:
+Example Output:
 
 ```
 Items seen: 451/732
@@ -59,8 +59,6 @@ Wrote out\save1.dat and out\eid_savegames.lua
 3. Copy `saveX.dat` into it. The slot number must match the slot you play on.
 4. If you use EID, copy `eid_savegames.lua` into `mods/external item descriptions_836319872/scripts/` inside the game folder and overwrite the existing file (if applicable).
 5. Copy the files **before** you pick up a new item in game. The mod writes its own save on the first new pickup and could overwrite yours.
-
-On launch, the console (`~`) should print `DeadGod Helper loaded, N vanilla items seen`.
 
 ## Where to find your save file
 
