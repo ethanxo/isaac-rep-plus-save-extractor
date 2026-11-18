@@ -1,0 +1,5 @@
+# Ignore everything except the extractor, README and this file
+*
+!.gitignore
+!dgh_extractor.py
+!README.md
